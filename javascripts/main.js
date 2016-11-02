@@ -1,3 +1,4 @@
+
     var data = null;
 	var Encoder = null;
 	var H = null;
