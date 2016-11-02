@@ -12,6 +12,13 @@
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.6.0/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.8.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+
 
   </head>
   <body>
@@ -20,6 +27,22 @@
         <h1>Nmcrchart</h1>
         <p></p>
       </header>
+	<div id="dvImportSegments" class="fileupload ">
+		<fieldset>
+			<legend>Upload your CSV File</legend>
+				<input type="file" name="File Upload" id="txtFileUpload" accept=".csv" />
+	   </fieldset>
+	</div>
+	<br>
+	<div id="linear"></div>
+	<br>
+	<br>
+	<br>
+	<div id="std"></div>
+	<br>
+	<br>
+	<br>
+	<div id="chanels"></div>
 
       <div id="banner">
         <span id="logo"></span>
