@@ -1,5 +1,5 @@
 var counter = 0;	
-var glabalEvents = [];
+var globalEvents = [];
     $(document).ready(function() {
     // The event listener for the file upload
     document.getElementById('txtFileUpload').addEventListener('change', upload, false);
@@ -17,17 +17,17 @@ var glabalEvents = [];
 	    if (!browserSupportFileUpload()) {
 	        alert('The File APIs are not fully supported in this browser!');
 	        } else {
-					couner = 0;
-			        glabalEvents = evt;
+					counter = 0;
+			        globalEvents = evt;
 					ReadUpdateAllfiles();
 			};		
 	};
 	});
 
 	function ReadUpdateAllfiles(){
-		if(counter < glabalEvents.target.files.length)
+		if(counter < globalEvents.target.files.length)
 		{
-			var file = glabalEvents.target.files[counter];
+			var file = globalEvents.target.files[counter];
 			console.log(file.name);
 			var reader = new FileReader();
 			reader.readAsText(file);
